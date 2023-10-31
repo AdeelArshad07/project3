@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converter tools</title>
+    <link rel="stylesheet" href="./Converter.css">
+</head>
+<body>
+    <div id="main">
+        <div id="heading">
+            <h1>Converter tools</h1>
+        </div>
+             <div id="v1">
+                <label for="">Enter in Kilo Meter</label>
+                <input id="kilometers" type="text" placeholder="Enter in Kilometer">
+             </div>
+             <div id="v2">
+                <label for="">Enter in Meter</label>
+                <input id="Meters" type="text" placeholder="Enter in Meter">
+             </div>
+    </div>
+
+
+
+    <script>
+        var kilometer = document.getElementById('kilometers');
+        var Meter = document.getElementById('Meters');
+        kilometer.addEventListener('input',function()
+        {
+            var kg=this.value;
+            var mr=kg*1000;
+            Meter.value=mr;
+
+        }
+        );</script>
+<script>
+        var Meter=document.getElementById('Meters');
+        var kilometer=document.getElementById('kilometers')
+        Meter.addEventListener('input',function()
+        {
+            var mr=this.value;
+            var kg=mr/1000;
+            kilometer.value=kg;
+        }
+        
+        );
+        
+    </script>
+    
+
+    
+</body>
+</html>
